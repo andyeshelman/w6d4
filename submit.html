@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/submit.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">  
+    <title>Submit</title>
+</head>
+<body>
+    <header>
+        <h1>Send Us Your Best Recipe!</h1>
+    </header>
+
+    <form onSubmit="handlesubmit">
+        <div>
+            <label class="ingredients" for="ingredients">Ingredients</label>
+            <textarea id="ingredients"
+                class="ingredients"
+                name="ingredients"
+                cols="50"
+                placeholder="Enter ingredients here..."></textarea>
+        </div>
+        
+        <div>
+            <label class="steps" for="steps">Steps</label>
+            <textarea id="steps"
+                class="steps"
+                name="steps"
+                cols="50"
+                placeholder="Enter steps here..."></textarea>
+        </div>
+
+        <div>
+            <label class="contact" for="name">Name</label>
+            <input type="text" class="contact" id="name" name="name" size="58">
+        </div>
+
+        <div>
+            <label for="email" class="contact">Email</label>
+            <input type="email" class="contact" id="email" name="email" size="58">
+        </div>
+
+        <button type="submit" id="submit">Submit</button>
+
+    </form>
+
+    <footer>
+        <p>Many Many Thanks!</p>
+    </footer>
+
+</body>
+</html>
